@@ -403,7 +403,25 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 ***Questions:***
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+
+   The Server Error is being returned because the MySQL query failed to execute successfully. This happens because the nodejs-container cannot connect to the mysql-container due to one or more of the following reasons:
+
+| **Issue**              | **Explanation**                                                                                                                                         |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Network Issue**       | The `nodejs-container` is running on `nodejsnet`, but it is not connected to the `mysqlnet` network where `mysql-container` resides. Without bridging the networks, the two containers cannot communicate. |
+| **Incorrect Hostname**  | The MySQL `host` in the Node.js app is set to `'mysql-container'`, but if the containers are not on the same network, this hostname will not resolve.    |
+| **MySQL Configuration** | The database (`mydatabase`), table (`mytable`), or user (`myuser`) may not be correctly configured, or the credentials may be incorrect.                |
+| **No Data in the Table**| If the `mytable` table exists but is empty, the query returns no results, but this specific error would return a 404 or no JSON response instead of "Server Error." |
+| **Issue**              | **Explanation**                                                                                                                                         |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Network Issue**       | The `nodejs-container` is running on `nodejsnet`, but it is not connected to the `mysqlnet` network where `mysql-container` resides. Without bridging the networks, the two containers cannot communicate. |
+| **Incorrect Hostname**  | The MySQL `host` in the Node.js app is set to `'mysql-container'`, but if the containers are not on the same network, this hostname will not resolve.    |
+| **MySQL Configuration** | The database (`mydatabase`), table (`mytable`), or user (`myuser`) may not be correctly configured, or the credentials may be incorrect.                |
+| **No Data in the Table**| If the `mytable` table exists but is empty, the query returns no results, but this specific error would return a 404 or no JSON response instead of "Server Error." |
+
+
+
+3. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
 
