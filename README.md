@@ -248,7 +248,18 @@ YES.
 
 <img src="https://github.com/user-attachments/assets/955f7e3a-80f1-4054-8a1c-f89593a94ef9" width="70%">
 
+
 3. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+
+| **Aspect Differents**               | **Previous Ping**                                                                 | **Current Ping**                                |
+|---------------------------|-----------------------------------------------------------------------------------|------------------------------------------------|
+| **Network Isolation**     | Separate networks (`bluenet`, `rednet`)                                           | Shared network (`bridgenet`)                   |
+| **Container Communication** | Not possible (isolation enforced)                                                | Possible (shared network allows it)            |
+| **Reason for Failure/Success** | By default, containers on different Docker networks cannot communicate.         | Containers connected to the same network can communicate directly. |
+| **Explanation**           | `c1` (on `bluenet`) couldn’t see `c2` (on `rednet`), so `ping` likely failed.     | `c1` and `c2` are connected to `bridgenet`, enabling direct communication. |
+
+
+   
 
 ## Intermediate Level (10 marks bonus)
 
