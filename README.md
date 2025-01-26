@@ -243,12 +243,13 @@ docker exec c1 ping c2
 ***Questions:***
 
 1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+   
 YES.
-![image](https://github.com/user-attachments/assets/955f7e3a-80f1-4054-8a1c-f89593a94ef9)
+
+<img src="[./images/CommittingUI.png](https://github.com/user-attachments/assets/955f7e3a-80f1-4054-8a1c-f89593a94ef9)" width="70%">
 
 
-
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+3. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
 
 ## Intermediate Level (10 marks bonus)
 
