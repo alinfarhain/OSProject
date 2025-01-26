@@ -246,8 +246,7 @@ docker exec c1 ping c2
    
 YES.
 
-<img src="[./images/CommittingUI.png](https://github.com/user-attachments/assets/955f7e3a-80f1-4054-8a1c-f89593a94ef9)" width="70%">
-
+<img src="https://github.com/user-attachments/assets/955f7e3a-80f1-4054-8a1c-f89593a94ef9" width="70%">
 
 3. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
 
