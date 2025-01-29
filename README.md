@@ -22,7 +22,7 @@ Team Mates:
   </ul>
 </ul>
 
-<p>⚠ <strong>Note:</strong> This Codespace ("Special Memory") is for informational and reference purposes only. Please refer to the repository folder.</p>
+<p>⚠ <strong>Note:</strong> This Codespace ("Special Memory") is for informational and reference purposes only. Please refer to the repository folder for detailed documentation, project updates, and relevant code files.</p>
 
 <h3>Attached Image:</h3>
 <img src="https://github.com/user-attachments/assets/f4d548a0-882a-476d-9715-ed2cd935abf3" width="70%">
