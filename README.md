@@ -9,6 +9,25 @@ Team Mates:
 2. NABILAH BINTI AHMAD NORDIN (2225498)
 3. AMYSHA QISTINA BINTI AMEROLAZUAM (2225998)
 
+<h2>Disclaimer:</h2>
+<p>The provided Codespace ("Special Memory") contains our activities and project files for reference.</p>
+
+<ul>
+  <li>You can access the Codespace, as shown in the attached image, to review our work.</li>
+  <li>The repository includes <strong>five key files</strong>:</li>
+  <ul>
+    <li><strong>README.md</strong> – Contains all answers and project details.</li>
+    <li><strong>Node.js files</strong> – Core backend logic.</li>
+    <li><strong>Images folder</strong> – Stores relevant media assets.</li>
+  </ul>
+</ul>
+
+<p>⚠ <strong>Note:</strong> This Codespace ("Special Memory") is for informational and reference purposes only. Please refer to the repository folder.</p>
+
+<h3>Attached Image:</h3>
+<img src="https://github.com/user-attachments/assets/f4d548a0-882a-476d-9715-ed2cd935abf3" width="70%">
+
+
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
 2. When you complete the project, make sure to submit the repository link of your cloned project. Make sure all the files are as what you aspect in your repository. 
