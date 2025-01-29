@@ -404,24 +404,43 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
 
+```sh
+
 <img src="https://github.com/user-attachments/assets/82f34d46-f604-4242-9dcc-a896cf85c138" width="80%">
 
  
  This happens because the nodejs-container cannot connect to the mysql-container due to they are on separate Docker networks, preventing them from communicating with each other.
-
+```
 
 
 3. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
+```sh
 im using mysql2 to connect to mysql, then rebuild image
 @NabilahNordin ➜ /workspaces/OSProject/nodejs-app# npm i mysql2 
 
 to fix error, use same network nodejsnet for container mysql-contaier and nodejs-container 
 @NabilahNordin ➜ /workspaces/OSProject/nodejs-app# docker network connect nodejsnet mysql-container
 
-for GUI inspect, im using portainer 
+Output Result:
+
+1. This is using terminal:
+
+@NabilahNordin ➜ /workspaces/OSProject/nodejs-app (main) $ curl http://localhost:3000/random
+{"id":2,"name":"example2","value":"value2"}@NabilahNordin ➜ /workspaces/OSProject/nodejs-app (main) $ 
+
+2. This is using browser:
 
 <img src="https://github.com/user-attachments/assets/f787af5d-0169-45e7-84a3-f52301fbb713" width="80%">
+
+for GUI inspect, im using portainer 
+
+<img src="https://github.com/user-attachments/assets/c3f31ee5-b14b-422b-bc68-c939a322ec07" width="80%">
+
+
+For future assignments, I recommend using **Portainer**, as it provides a more user-friendly and efficient interface. It simplifies container management, making it easier to navigate and monitor Docker environments.
+```
+
 
 
 
