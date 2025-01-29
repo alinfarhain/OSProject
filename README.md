@@ -9,7 +9,7 @@ Team Mates:
 2. NABILAH BINTI AHMAD NORDIN (2225498)
 3. AMYSHA QISTINA BINTI AMEROLAZUAM (2225998)
 
-<h2>Disclaimer:</h2>
+<h2>Disclaimer</h2>
 <p>The provided Codespace ("Special Memory") contains our activities and project files for reference.</p>
 
 <ul>
