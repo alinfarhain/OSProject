@@ -404,7 +404,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
 
-<img src="https://github.com/user-attachments/assets/82f34d46-f604-4242-9dcc-a896cf85c138" width="70%">
+<img src="https://github.com/user-attachments/assets/82f34d46-f604-4242-9dcc-a896cf85c138" width="85%">
 
  
  This happens because the nodejs-container cannot connect to the mysql-container due to they are on separate Docker networks, preventing them from communicating with each other.
