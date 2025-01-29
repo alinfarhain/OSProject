@@ -253,12 +253,7 @@ The --name switch in Docker is used to name the container anything we like at th
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
 
-NETWORK ID     NAME      DRIVER    SCOPE
-8878ee338d7c   bluenet   bridge    local
-ad2d028a7dc6   bridge    bridge    local
-d2505bfa446c   host      host      local
-d7c89855229f   none      null      local
-9b77f8e94da2   rednet    bridge    local
+![image](https://github.com/user-attachments/assets/5204bd7f-6832-466e-ac82-88b07f21a856)
 
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
 
