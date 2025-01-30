@@ -257,8 +257,13 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***
+
+No, because after stopping and removing the container elated_elion, the file helloworld.txt was no longer available, demonstrating that data inside a container is ephemeral by default.
+
+2. Can we run two, or three instances of debian linux? . ***(1 mark)***
+
+Yes, we can run multiple instances of Debian Linux because when you ran a Debian container with the name elated_elion (docker run --detach -it debian) and you can run additional containers in the same way. Each container runs independently.
 
 ## Running your own container with persistent storage
 
