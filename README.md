@@ -26,10 +26,13 @@ Team Mates:
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
 
+```bash
 (https://github.com/alinfarhain/OSProject)
+```
 
 2. How many files and folders are in this repository. ***(1 mark)*** 
 
+```
 There are 2 folders and 3 files:
 
 folder:
@@ -46,6 +49,7 @@ README.md
 index.html
 
 myroot
+```
 
 ## Exploring github codespaces
 
@@ -77,19 +81,20 @@ myroot
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
-
+```
 Linux
+```
 
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
-
+```
 4-core CPU, 8GB RAM
 
 8-core CPU, 16GB RAM
-
+```
 3. Why must we commit and sync our current work on source control? ***(1 mark)***
-
+```
 To ensure changes are saved, tracked, and shared with collaborators.
-
+```
 ## Exploring the Terminal
 
 1. Look at the TERMINAL tab. Explore and run commands according to the questions below. 
@@ -171,35 +176,35 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 <img src="./images/uname.png" width="70%">
 
 11. What is the available free memory in the system. ***(1 mark)***
-
+```
 342MB free memory and 5.6GB available memory in the system
-
+```
 12. What is the available disk space mounted on /workspace. ***(1 mark)***
-
+```
 20GB
-
+```
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
-
+```
 Version: 6.5.0-1025-azure
 
 Hardware Architecture: x86_64
-
+```
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
-
+```
 ls shows only visible files and directories while ls -asl shows all files with file sizes and date and time of the last modification
-
+```
 15. What is the TLB size of the Virtual CPU. ***(1 mark)***
-
+```
 2560(~10MB) 4K pages
-
+```
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
-
+```
 CPU speed is 3243.750 MHz, or about 3.24 GHz.
-
+```
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
-
+```
 The top running process consuming the most CPU cycles is /vscode/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/node, with a CPU usage of 1.4%
-
+```
 ## Running your own container instance.
 
 1. At the terminal, run a linux instance. By typing the following command. 
@@ -259,13 +264,13 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)***
-
+```
 No, because after stopping and removing the container elated_elion, the file helloworld.txt was no longer available, demonstrating that data inside a container is ephemeral by default.
-
+```
 2. Can we run two, or three instances of debian linux? . ***(1 mark)***
-
+```
 Yes, we can run multiple instances of Debian Linux because when you ran a Debian container with the name elated_elion (docker run --detach -it debian) and you can run additional containers in the same way. Each container runs independently.
-
+```
 ## Running your own container with persistent storage
 
 1. In the previous experiment, you might have notice that containers are not persistent. To make storage persistent, you will need to mount them. 
@@ -322,10 +327,18 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** permission = drwxr-sr-x 2 user = 1000 group = 1000.
-2. What port is the apache web server running. ***(1 mark)*** port 80.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** 8080.
-
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+```
+permission = drwxr-sr-x 2 user = 1000 group = 1000.
+```
+2. What port is the apache web server running. ***(1 mark)*** 
+```
+port 80.
+```
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+```
+8080.
+```
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
