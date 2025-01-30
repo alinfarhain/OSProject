@@ -124,7 +124,7 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 7. Run the command **free -h** . ***(1 mark)***
 
-
+<img src="./images/freeh.png" width="70%">
 
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
