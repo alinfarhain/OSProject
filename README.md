@@ -106,9 +106,12 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 <img src="./images/du1.png" width="70%">
 
+<img src="./images/du2.png" width="70%">
+
+5. Run the command **ls** . ***(1 mark)***
 
 
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
+
 6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
 7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
