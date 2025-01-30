@@ -149,6 +149,8 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 <img src="./images/top7.png" width="70%">
 
+<img src="./images/top8.png" width="70%">
+
 
 10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
 11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
