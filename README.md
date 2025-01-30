@@ -191,14 +191,20 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** .
+
+ls -l /workspaces/OSProject/myroot is the permission
+![image](https://github.com/user-attachments/assets/525ec670-a748-400b-826f-027a222fd890)
+
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+yes, 
+![image](https://github.com/user-attachments/assets/a22e14a3-53c3-4977-9d3f-914a9c79c4c3)
 
 ## You are on your own, create your own static webpage
 
