@@ -177,11 +177,27 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 20GB
 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+
+Version: 6.5.0-1025-azure
+
+Hardware Architecture: x86_64
+
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
+
+ls shows only visible files and directories while ls -asl shows all files with file sizes and date and time of the last modification
+
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***
+
+2560(~10MB) 4K pages
+
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
+
+CPU speed is 3243.750 MHz, or about 3.24 GHz.
+
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+
+The top running process consuming the most CPU cycles is /vscode/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/node, with a CPU usage of 1.4%
 
 ## Running your own container instance.
 
