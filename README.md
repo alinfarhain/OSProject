@@ -118,8 +118,14 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 <img src="./images/ls.png" width="70%">
 
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
+6. Run the command **ls -asl** . ***(1 mark)***
+
+<img src="./images/lsasl.png" width="70%">
+
+7. Run the command **free -h** . ***(1 mark)***
+
+
+
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
 10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
