@@ -9,25 +9,6 @@ Team Mates:
 2. NABILAH BINTI AHMAD NORDIN (2225498)
 3. AMYSHA QISTINA BINTI AMEROLAZUAM (2225998)
 
-<h2>Disclaimer</h2>
-<p>The provided Codespace ("Special Memory") contains our activities and project files for reference.</p>
-
-<ul>
-  <li>You can access the Codespace, as shown in the attached image, to review our work.</li>
-  <li>The repository includes <strong>five key files</strong>:</li>
-  <ul>
-    <li><strong>README.md</strong> – Contains all answers and project details.</li>
-    <li><strong>Node.js files</strong> – Core backend logic.</li>
-    <li><strong>Images folder</strong> – Stores relevant media assets.</li>
-  </ul>
-</ul>
-
-<p>⚠ <strong>Note:</strong> This Codespace ("Special Memory") is for informational and reference purposes only. Please refer to the repository folder for detailed documentation, project updates, and relevant code files.</p>
-
-<h3>Attached Image:</h3>
-<img src="https://github.com/user-attachments/assets/f4d548a0-882a-476d-9715-ed2cd935abf3" width="70%">
-
-
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
 2. When you complete the project, make sure to submit the repository link of your cloned project. Make sure all the files are as what you aspect in your repository. 
@@ -43,9 +24,32 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** (https://github.com/alinfarhain/OSProject)
-2. How many files and folders are in this repository. ***(1 mark)*** There are 1 folder "images" and 1 file "README.md"
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
 
+```bash
+(https://github.com/alinfarhain/OSProject)
+```
+
+2. How many files and folders are in this repository. ***(1 mark)*** 
+
+```
+There are 2 folders and 3 files:
+
+folder:
+
+node.js
+
+images
+
+
+file:
+
+README.md
+
+index.html
+
+myroot
+```
 
 ## Exploring github codespaces
 
@@ -76,10 +80,21 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+```
+Linux
+```
 
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+```
+4-core CPU, 8GB RAM
+
+8-core CPU, 16GB RAM
+```
+3. Why must we commit and sync our current work on source control? ***(1 mark)***
+```
+To ensure changes are saved, tracked, and shared with collaborators.
+```
 ## Exploring the Terminal
 
 1. Look at the TERMINAL tab. Explore and run commands according to the questions below. 
@@ -95,24 +110,101 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)***
 
+<img src="./images/pwd.png" width="70%">
+
+2. Run the command **cat /etc/passwd** . ***(1 mark)***
+
+<img src="./images/cat.png" width="70%">
+
+3. Run the command **df** . ***(1 mark)***
+
+<img src="./images/df.png" width="70%">
+
+4. Run the command **du** . ***(1 mark)***
+
+<img src="./images/du1.png" width="70%">
+
+<img src="./images/du2.png" width="70%">
+
+<img src="./images/du3.png" width="70%">
+
+<img src="./images/du3.png" width="70%">
+
+<img src="./images/du4.png" width="70%">
+
+5. Run the command **ls** . ***(1 mark)***
+
+<img src="./images/ls.png" width="70%">
+
+6. Run the command **ls -asl** . ***(1 mark)***
+
+<img src="./images/lsasl.png" width="70%">
+
+7. Run the command **free -h** . ***(1 mark)***
+
+<img src="./images/freeh.png" width="70%">
+
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***
+
+<img src="./images/catproc.png" width="70%">
+
+<img src="./images/catproc2.png" width="70%">
+
+
+9. Run the command **top** and type **q** to quit. ***(1 mark)***
+
+<img src="./images/top.png" width="70%">
+
+<img src="./images/top2.png" width="70%">
+
+<img src="./images/top3.png" width="70%">
+
+<img src="./images/top4.png" width="70%">
+
+<img src="./images/top5.png" width="70%">
+
+<img src="./images/top6.png" width="70%">
+
+<img src="./images/top7.png" width="70%">
+
+<img src="./images/top8.png" width="70%">
+
+10. Run the command **uname -a**. ***(1 mark)***
+
+<img src="./images/uname.png" width="70%">
+
+11. What is the available free memory in the system. ***(1 mark)***
+```
+342MB free memory and 5.6GB available memory in the system
+```
+12. What is the available disk space mounted on /workspace. ***(1 mark)***
+```
+20GB
+```
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+```
+Version: 6.5.0-1025-azure
+
+Hardware Architecture: x86_64
+```
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
+```
+ls shows only visible files and directories while ls -asl shows all files with file sizes and date and time of the last modification
+```
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***
+```
+2560(~10MB) 4K pages
+```
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
+```
+CPU speed is 3243.750 MHz, or about 3.24 GHz.
+```
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+```
+The top running process consuming the most CPU cycles is /vscode/bin/linux-x64/91fbdddc47bc9c09064bf7acf133d22631cbf083/node, with a CPU usage of 1.4%
+```
 ## Running your own container instance.
 
 1. At the terminal, run a linux instance. By typing the following command. 
@@ -171,9 +263,14 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
-
+1. Are files in the container persistent. Why not?. ***(1 mark)***
+```
+No, because after stopping and removing the container elated_elion, the file helloworld.txt was no longer available, demonstrating that data inside a container is ephemeral by default.
+```
+2. Can we run two, or three instances of debian linux? . ***(1 mark)***
+```
+Yes, we can run multiple instances of Debian Linux because when you ran a Debian container with the name elated_elion (docker run --detach -it debian) and you can run additional containers in the same way. Each container runs independently.
+```
 ## Running your own container with persistent storage
 
 1. In the previous experiment, you might have notice that containers are not persistent. To make storage persistent, you will need to mount them. 
@@ -191,14 +288,20 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** .
+
+ls -l /workspaces/OSProject/myroot is the permission
+![image](https://github.com/user-attachments/assets/525ec670-a748-400b-826f-027a222fd890)
+
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+yes, 
+![image](https://github.com/user-attachments/assets/a22e14a3-53c3-4977-9d3f-914a9c79c4c3)
 
 ## You are on your own, create your own static webpage
 
@@ -224,10 +327,18 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
-
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+```
+permission = drwxr-sr-x 2 user = 1000 group = 1000.
+```
+2. What port is the apache web server running. ***(1 mark)*** 
+```
+port 80.
+```
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+```
+8080.
+```
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
@@ -245,12 +356,28 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+```sh
+BusyBox is a lightweight Linux distribution providing a small number of UNIX utilities packaged in a single executable file. BusyBox's minimal nature makes it a good candidate for use in Docker containers where a full-featured operating system is not required. Some common tools like sh (shell), ls, cat, etc. are combined into a single binary.
 
+The --name switch in Docker is used to name the container anything we like at the time it is created. Normally, Docker names any container, such as "compassionate_banach" or "adoring_turing," by default. The `--name` option allows us to use a name for the container that will be more meaningful and easier to manage than a default random name, such as c1 or c2.
+```
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+
+![image](https://github.com/user-attachments/assets/5204bd7f-6832-466e-ac82-88b07f21a856)
+
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+```sh
+c1 = "Gateway": "172.18.0.1" and c2 = "Gateway":  "172.19.0.1"
+```
+4. What is the network address for the running container c1 and c2? ***(1 mark)***
+```sh
+c1 = "IPAddress": "172.18.0.2" and c2 = "IPAddress": "172.19.0.2".
+```
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+```sh
+ping: bad address 'c2'.
+```
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
 ```
