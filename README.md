@@ -25,16 +25,24 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
-(https://github.com/alinfarhain/OSProject)
-2. How many files and folders are in this repository. ***(1 mark)*** 
-There are 2 folder and 2 file
 
-folder
+(https://github.com/alinfarhain/OSProject)
+
+2. How many files and folders are in this repository. ***(1 mark)*** 
+
+There are 2 folder and 2 file:
+
+folder:
+
 node.js
+
 images
 
-file
+
+file:
+
 README.md
+
 index.html
 
 
@@ -68,11 +76,17 @@ index.html
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
-Linux.
+
+Linux
+
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+
 4-core CPU, 8GB RAM
+
 8-core CPU, 16GB RAM
+
 3. Why must we commit and sync our current work on source control? ***(1 mark)***
+
 To ensure changes are saved, tracked, and shared with collaborators.
 
 ## Exploring the Terminal
@@ -151,10 +165,18 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 <img src="./images/top8.png" width="70%">
 
+10. Run the command **uname -a**. ***(1 mark)***
 
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
+<img src="./images/uname.png" width="70%">
+
+11. What is the available free memory in the system. ***(1 mark)***
+
+342MB free memory and 5.6GB available memory in the system
+
+12. What is the available disk space mounted on /workspace. ***(1 mark)***
+
+20GB
+
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
