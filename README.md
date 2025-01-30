@@ -45,7 +45,6 @@ README.md
 
 index.html
 
-
 ## Exploring github codespaces
 
 1. The next thing that we will be doing is exploring codespaces. First of all, read about codespaces https://docs.github.com/en/codespaces/overview#what-is-a-codespace
@@ -282,14 +281,20 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** .
+
+ls -l /workspaces/OSProject/myroot is the permission
+![image](https://github.com/user-attachments/assets/525ec670-a748-400b-826f-027a222fd890)
+
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+yes, 
+![image](https://github.com/user-attachments/assets/a22e14a3-53c3-4977-9d3f-914a9c79c4c3)
 
 ## You are on your own, create your own static webpage
 
@@ -315,9 +320,9 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** permission = drwxr-sr-x 2 user = 1000 group = 1000.
+2. What port is the apache web server running. ***(1 mark)*** port 80.
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 8080.
 
 ## Create SUB Networks
 
@@ -336,12 +341,28 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+```sh
+BusyBox is a lightweight Linux distribution providing a small number of UNIX utilities packaged in a single executable file. BusyBox's minimal nature makes it a good candidate for use in Docker containers where a full-featured operating system is not required. Some common tools like sh (shell), ls, cat, etc. are combined into a single binary.
 
+The --name switch in Docker is used to name the container anything we like at the time it is created. Normally, Docker names any container, such as "compassionate_banach" or "adoring_turing," by default. The `--name` option allows us to use a name for the container that will be more meaningful and easier to manage than a default random name, such as c1 or c2.
+```
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+
+![image](https://github.com/user-attachments/assets/5204bd7f-6832-466e-ac82-88b07f21a856)
+
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+```sh
+c1 = "Gateway": "172.18.0.1" and c2 = "Gateway":  "172.19.0.1"
+```
+4. What is the network address for the running container c1 and c2? ***(1 mark)***
+```sh
+c1 = "IPAddress": "172.18.0.2" and c2 = "IPAddress": "172.19.0.2".
+```
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+```sh
+ping: bad address 'c2'.
+```
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
 ```
@@ -353,7 +374,23 @@ docker exec c1 ping c2
 ***Questions:***
 
 1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+   
+YES.
+
+<img src="https://github.com/user-attachments/assets/955f7e3a-80f1-4054-8a1c-f89593a94ef9" width="70%">
+
+
+3. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+
+| **Aspect Differents**               | **Previous Ping**                                                                 | **Current Ping**                                |
+|---------------------------|-----------------------------------------------------------------------------------|------------------------------------------------|
+| **Network Isolation**     | Separate networks (`bluenet`, `rednet`)                                           | Shared network (`bridgenet`)                   |
+| **Container Communication** | Not possible (isolation enforced)                                                | Possible (shared network allows it)            |
+| **Reason for Failure/Success** | By default, containers on different Docker networks cannot communicate.         | Containers connected to the same network can communicate directly. |
+| **Explanation**           | `c1` (on `bluenet`) couldn’t see `c2` (on `rednet`), so `ping` likely failed.     | `c1` and `c2` are connected to `bridgenet`, enabling direct communication. |
+
+
+   
 
 ## Intermediate Level (10 marks bonus)
 
@@ -497,7 +534,46 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 ***Questions:***
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+
+
+<img src="https://github.com/user-attachments/assets/82f34d46-f604-4242-9dcc-a896cf85c138" width="80%">
+
+ ```sh
+ This happens because the nodejs-container cannot connect to the mysql-container due to they are on separate Docker networks, preventing them from communicating with each other.
+```
+
+
+3. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+
+```sh
+im using mysql2 to connect to mysql, then rebuild image
+@NabilahNordin ➜ /workspaces/OSProject/nodejs-app# npm i mysql2 
+
+to fix error, use same network nodejsnet for container mysql-contaier and nodejs-container 
+@NabilahNordin ➜ /workspaces/OSProject/nodejs-app# docker network connect nodejsnet mysql-container
+
+Output Result:
+
+1. This is using terminal:
+
+@NabilahNordin ➜ /workspaces/OSProject/nodejs-app (main) $ curl http://localhost:3000/random
+{"id":2,"name":"example2","value":"value2"}@NabilahNordin ➜ /workspaces/OSProject/nodejs-app (main) $ 
+
+2. This is using browser:
+```
+
+<img src="https://github.com/user-attachments/assets/f787af5d-0169-45e7-84a3-f52301fbb713" width="80%">
+
+```sh
+for GUI inspect, im using portainer 
+```
+<img src="https://github.com/user-attachments/assets/c3f31ee5-b14b-422b-bc68-c939a322ec07" width="80%">
+
+```sh
+For future assignments, I recommend using **Portainer**, as it provides a more user-friendly and efficient interface. It simplifies container management, making it easier to navigate and monitor Docker environments.
+```
+
+
 
 
 
