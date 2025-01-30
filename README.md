@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/40ee8b1f-d703-4a75-8a5b-185cea6ec7ca)# OSProject Running Containers for Application Development
+# OSProject Running Containers for Application Development
 
 Group Name: Tahakik 
 
@@ -24,8 +24,8 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** ```sh (https://github.com/alinfarhain/OSProject)```
-2. How many files and folders are in this repository. ***(1 mark)*** ```sh There are 1 folder "images" and 1 file "README.md"```
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** (https://github.com/alinfarhain/OSProject)
+2. How many files and folders are in this repository. ***(1 mark)*** ``` There are 1 folder "images" and 1 file "README.md"```
 
 
 ## Exploring github codespaces
