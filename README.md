@@ -30,7 +30,7 @@ Team Mates:
 
 2. How many files and folders are in this repository. ***(1 mark)*** 
 
-There are 2 folder and 2 file:
+There are 2 folders and 3 files:
 
 folder:
 
@@ -44,6 +44,8 @@ file:
 README.md
 
 index.html
+
+myroot
 
 ## Exploring github codespaces
 
