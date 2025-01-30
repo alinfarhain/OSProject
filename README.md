@@ -1,4 +1,4 @@
-# OSProject Running Containers for Application Development
+![image](https://github.com/user-attachments/assets/40ee8b1f-d703-4a75-8a5b-185cea6ec7ca)# OSProject Running Containers for Application Development
 
 Group Name: Tahakik 
 
@@ -8,25 +8,6 @@ Team Mates:
 1. ALIN FARHAIN BINTI ABDUL RAJAT @ ABDUL RAZAK (2224210)
 2. NABILAH BINTI AHMAD NORDIN (2225498)
 3. AMYSHA QISTINA BINTI AMEROLAZUAM (2225998)
-
-<h2>Disclaimer</h2>
-<p>The provided Codespace ("Special Memory") contains our activities and project files for reference.</p>
-
-<ul>
-  <li>You can access the Codespace, as shown in the attached image, to review our work.</li>
-  <li>The repository includes <strong>five key files</strong>:</li>
-  <ul>
-    <li><strong>README.md</strong> – Contains all answers and project details.</li>
-    <li><strong>Node.js files</strong> – Core backend logic.</li>
-    <li><strong>Images folder</strong> – Stores relevant media assets.</li>
-  </ul>
-</ul>
-
-<p>⚠ <strong>Note:</strong> This Codespace ("Special Memory") is for informational and reference purposes only. Please refer to the repository folder for detailed documentation, project updates, and relevant code files.</p>
-
-<h3>Attached Image:</h3>
-<img src="https://github.com/user-attachments/assets/f4d548a0-882a-476d-9715-ed2cd935abf3" width="70%">
-
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -43,8 +24,8 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** (https://github.com/alinfarhain/OSProject)
-2. How many files and folders are in this repository. ***(1 mark)*** There are 1 folder "images" and 1 file "README.md"
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** ```sh (https://github.com/alinfarhain/OSProject)```
+2. How many files and folders are in this repository. ***(1 mark)*** ```sh There are 1 folder "images" and 1 file "README.md"```
 
 
 ## Exploring github codespaces
