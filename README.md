@@ -33,9 +33,13 @@ Team Mates:
 2. How many files and folders are in this repository. ***(1 mark)*** 
 
 ```
-There are 2 folders and 3 files:
+There are 4 folders and 1 files:
 
 folder:
+
+Webpage
+
+myroot
 
 node.js
 
@@ -45,10 +49,6 @@ images
 file:
 
 README.md
-
-index.html
-
-myroot
 ```
 
 ## Exploring github codespaces
